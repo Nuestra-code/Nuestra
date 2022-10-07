@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first {
+    background-color: lightpink;
+    margin: 20px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 2px solid black;
+}

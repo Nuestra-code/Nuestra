@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: antiquewhite; margin-top: 1in; margin-left: 2in;">
+    <h1>ABC Company IT Support Request Form</h1>
+
+    <p>
+        <label for="fName">First Name :</label>
+        <input type="text" name="fName" id="fName" style="width:5in;">
+    </p>
+
+    <p>
+        <label for="lName">Last Name :</label>
+        <input type="text" name="lName" id="lName" style="width: 5in;">
+    </p>
+
+    <p>
+        <label for="email">Email Address :</label>
+        <input type="text" name="email" id="email" style="width: 5in;">
+    </p>
+
+    <p>
+        <label for="cNum">Contact Number :</label>
+        <input type="text" name="cNum" id="cNum" placeholder="Enter your complete phone number with extension or mobile number" style="width: 5in;">
+    </p>
+    
+    <p>
+        <input type="radio" name="onsite" id="onsite"> 
+        <label for="onsite">Onsite</label>
+        
+
+        <input type="radio" name="wfh" id="wfh">
+        <label for="wfh">Work From Home</label>
+        
+    </p>
+
+    <p>
+        <label for="loc">Location :<br />
+        <i>For onsite, please state you Workstation No., Department, Floor and Building<br />
+        For work from home, please complete your address and include a landmark nearest to your location.</i></label><br />
+           
+        <input type="text" name="loc" id="loc" style="width: 5in;">
+    </p>
+
+    <p>
+        <label for="type">Service Request Type :</label>
+        <select name="type" id="type" multiple>
+            <option value="select">Select Type</option>
+            <option value="dlSetup">Desktop/Laptop Setup</option>
+            <option value="dlSupport">Desktop/Laptop Support</option>
+            <option value="sInstallation">Software Installation</option>
+            <option value="sSupport">Software Support</option>
+            <option value="cpSetup">Computer Peripheral Setup</option>
+            <option value="cpTrouble">Computer Peripheral Troubleshooting</option>
+            <option value="cpMaintenance">Computer Peripheral Maintenance</option>
+        </select>
+    </p>
+
+    <p>
+        <label for="request">Request Description :</label>
+        <textarea name="request" id="request" cols="30" rows="10" placeholder="Explain your service request as details as possible"></textarea>
+    </p>
+
+   
+    Upload a picture/screenshot for reference. 
+    <input type="file">
+
+    <p>
+        <button type="submit" onclick="thanks()">Submit</button>
+            <script>
+                function thanks() {
+                    alert("Thanks for submitting your request.");
+                }
+            </script>
+
+        <button type="reset">Clear</button>
+    </p>
+
+</body>
+</html>
