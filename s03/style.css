@@ -89,7 +89,7 @@ a:visited {
     color: green;
 }
 
-/*Mouse ove link*/
+/*Mouse over Link*/
 
 a:hover {
     color: orange;
@@ -99,6 +99,18 @@ a:hover {
 a:active {
     color: dodgerblue;
 }
+
+/* Pseudo Elements
+    - used to style a specific part of an element.
+    Syntax: seletor:: pseudo-element {property:value}
+*/
+
+/* Firts Line - when we shrink or resize our webpages, the first line of a sentence makes a change */
+
+/* p::first-line {
+    color: #ff0000;
+    font-variant: small-caps;
+ */
 
 p::first-letter {
     color: brown;

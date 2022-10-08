@@ -12,6 +12,30 @@
     border: 2px solid black;
 }
 
+.second {
+    background-color: fuchsia;
+    border: 2px solid black;
+    margin: 20px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    padding: 20px;
+    padding-left: 50px;
+    padding-bottom: 120px;
+}
+
+span {
+    background-color: lightblue;
+    border: 2px solid black;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    padding: 20px;
+
+    display: block;
+}
+
 .container {
     background-color: lightgreen;
     margin: 20px;
