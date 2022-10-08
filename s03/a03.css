@@ -1,6 +1,38 @@
-* {
-    font-family: 'Courier New', Courier, monospace;
+/* Universal Selector */
+*{
+    font-family: 'Arial Narrow';
     font-size: 100%;
 }
 
+/* Type Selector */
+h1{
+    font-size: 200%;
+}
 
+/* Id Selector */
+#things{
+    text-transform: uppercase;
+}
+
+/* Class Selector */
+.languages{
+    background-color: yellowgreen;
+}
+
+div + ul {
+    list-style: none;
+}
+
+#jsLogo img{
+    width: 5%;
+    height: 5%;
+    border-radius: 50px;
+}
+
+div ~ p {
+    text-align-last: center;
+}
+
+ul > li {
+    letter-spacing: 10px;
+}

@@ -11,3 +11,35 @@
     padding: 20px;
     border: 2px solid black;
 }
+
+.container {
+    background-color: lightgreen;
+    margin: 20px;
+    margin-top: 40px;
+    border: 10px solid purple;
+    padding: 20px;
+}
+
+h1 {
+    display: inline;
+    margin: 15px;
+    background-color: lightsalmon;
+    padding: 15px;
+    border: 5px dashed grey;
+}
+
+.third {
+    margin-top: 40px;
+}
+
+a {
+    background-color: lawngreen;
+    color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
