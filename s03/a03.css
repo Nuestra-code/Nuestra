@@ -19,6 +19,7 @@ h1{
     background-color: yellowgreen;
 }
 
+/* Adjacent Sibling Selector */
 div + ul {
     list-style: none;
 }
@@ -26,9 +27,10 @@ div + ul {
 #jsLogo img{
     width: 5%;
     height: 5%;
-    border-radius: 50px;
+    border-radius: 50%;
 }
 
+/* General Sibling Selector */
 div ~ p {
     text-align-last: center;
 }
