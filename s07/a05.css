@@ -1,0 +1,85 @@
+body {
+    background-color: lavender;
+    margin: 0;
+}
+
+body nav {
+    background-color: burlywood;
+    top: 50px;
+    width: 100%;
+    position: fixed;
+}
+
+body nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+body nav ul li {
+    display: inline-block;
+}
+
+body nav ul li a {
+    display: inline-block;
+    padding: 5px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+body nav ul li a:hover {
+    background-color: cornsilk;
+}
+
+*{
+    box-sizing: border-box;
+}
+.menu {
+    background-color: cornflowerblue;
+    padding: 20px;
+    float: left;
+    width: 20%;
+}
+
+/* for mobile devices */
+@media screen and (min-width:320px) and (max-width:480px) {
+    .menu {
+        width: 35%;
+        height: 50%;
+    }
+}
+
+/* for tablet */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .menu {
+        width: 20%;
+        height: 50%;
+
+    }
+}
+
+/* for laptops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .menu {
+        width: 15%;
+        height: 50%;
+    }
+}
+
+/* for desktop */
+@media screen and (min-width:1025px) and (max-width:1200px){
+    .menu {
+        width: 40%;
+        height: 10%;
+    }
+}
+
+/* for extra large screens  */
+@media screen and (min-width: 1201px) {
+    .menu {
+        width: 40%;
+        height: 10%;
+    }
+}

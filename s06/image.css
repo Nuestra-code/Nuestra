@@ -22,12 +22,17 @@ img {
     display: none; /*hidden as default*/
     position: fixed; /*stay in plae*/
     z-index: 1; /*sit on top*/
+    /* 
+        stack order of an element.
+        - this property works when position elements and flex items are present
+     */
     padding-top: 100px; /*Location of the box*/
     left: 0;
     top: 0;
     width: 100%; /*full width*/
     height: 100%; /*full height*/
     overflow: auto; /*enables scroll if needed*/
+    /* clips the content or add scrolls based on the elements declared in the overflow */
     background-color: rgb(0, 0, 0); /*fallback colors*/
     background-color: rgba(0,0,0,0.9); /*black with opacity*/
 }
@@ -60,17 +65,39 @@ img {
     animation-duration: 0.6s;
 }
 
+/* 
+    @webkit or AKA blink 
+    - renders content in Safari and Chrome
+    - To mitigate the risk of cross platform incompatibility.
+    - used for transitions, transform, animation, calc, flexbox, columns
+*/
+
+/* 
+    keyframe syntax
+    @keyframes animationname {
+        keyframes-selector {css-style;}
+    }
+
+    @keyframe - rule to specify animationcode.
+    - animation is gradually changing from one set of css to another.
+ */
+
 @-webkit-keyframes zoom {
     from 
     {-webkit-transform:scale(0)} to {-webkit-transform: scale(1);}
 }
 
 @keyframes zoom {
-    from {
+    from { /* the beginning of animation*/
         transform: scale(0);
     }
-    to {
+    to { /* end of animation/animation is complete*/
         transform: scale(1);
+        /* 2D/3D transformation of an event */
+        /* 
+            transfer properties 
+            rotate, scale, move, skew
+        */
     }
 }
 
