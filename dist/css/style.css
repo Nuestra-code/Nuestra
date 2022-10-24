@@ -1,0 +1,18 @@
+/*# sourceMappingURL=style.css.map */almond;
+  border: 3px;
+}
+
+.text-primary {
+  background: DarkGray;
+  box-shadow: 0 0 1px rgba(169, 169, 169, 0.25);
+  color: #fff;
+}
+
+/*Define two mixins in the arguments */
+.myArticle {
+  border: 1px solid blue;
+}
+
+.myNotes {
+  border: 2px solid red;
+}/*# sourceMappingURL=style.css.map */
