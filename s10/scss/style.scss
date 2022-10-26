@@ -15,17 +15,17 @@
             margin-bottom: 0;
         }
 
-        & a {
-            color: #fff;
-            padding-left: 15%;
-            display: block;
-            height: 100%;
-            font-size: 24px;
-            line-height: 42px;
-            text-decoration: none;
-            position: absolute;
-            z-index:1;
-        }
+        // & a {
+        //     color: #fff;
+        //     padding-left: 15%;
+        //     display: block;
+        //     height: 100%;
+        //     font-size: 24px;
+        //     line-height: 42px;
+        //     text-decoration: none;
+        //     position: absolute;
+        //     z-index:1;
+        // }
 
         &:before {
             content: '';
@@ -63,4 +63,8 @@
             width: 100%;
         }
     }
+#contact {
+    width: 20px;
+    
+}
 }
