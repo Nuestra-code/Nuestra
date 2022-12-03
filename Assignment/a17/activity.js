@@ -20,7 +20,7 @@
 
 // Where will console.log() output its contents when run in Node.js?
 /*
-    
+    Terminal
 */
 
 // What property of the request object contains the address's endpoint?
