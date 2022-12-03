@@ -296,3 +296,110 @@ db.users.find(
         courses: ["CSS", "JavaScript", "PHP"]
     }
 );
+
+// Query an embedded document
+db.users.find(
+    {
+        contact: {phone: "87654321",
+        email: "stephenhawking@mail.com"
+        }
+    }
+);
+
+// Querying and array without regard to order
+// React, Phyton
+// $all
+db.users.find(
+    {
+        courses: {
+            $all: ["React", "Phyton"]
+        }
+    }
+);
+
+// Logical Operators
+// $or
+db.users.find(
+    {
+        $or: [
+            {firstName: "Neil"}]
+    }
+);
+
+// How about if we add another criteria? Yes, this is possible, as long as it is separated by objects.
+db.users.find(
+    {
+        $or: [
+            {firstName: "Neil"},
+            {age: 25},
+            {age: {$gte:50}}
+        ]
+    }
+);
+
+//$and operator
+// age not equal to 82 and 86
+// phone number 123456789
+db.users.find(
+    {
+        $or: [
+            {firstName: "Neil"},
+            {age: 25},
+            {age: {$gte:50}}
+        ]
+    }
+);
+
+// Can we omit $and operator, will it still work?
+// Yes, it will still work. PLease use the code structure belowas an example.
+db.users.find(
+    {
+    
+            age: {$ne:82},
+            age: {$ne:76},
+            "contact.phone":"123456789"
+        
+    }
+);
+
+/* Field Projection */
+db.users.find(
+    {firstName: "Jane"},
+    {firstName: 1, _id:0}
+);
+
+// find document of Jane anf return only the fields first name, last name and phone number
+db.users.find(
+    {firstName: "Jane"},
+    {
+        _id: 0, 
+        firstName: 1,
+        lastName: 1,
+        "contact.phone":1}
+);
+
+// Query Operator
+    // $regex
+db.users.find(
+    {
+        firstName: {$regex: 'N', $options: '1'}
+    }
+);
+
+// Exercise 5:
+/*
+    Find users with letter "S" in their firstname and letter "D" in their last name.
+    This is not case sensitive
+    Show only the first and last name and hide the id field 
+
+    CLUE: change the value in $options keyword
+*/
+db.users.find(
+    {
+        _id: 0,
+        firstName: {$regex: 'S', $options: '1'},
+        lastName: {$regex: 'D', $options: '1'},
+        firstName: {$regex: 'S', $options: '2'},
+        lastName: {$regex: 'D', $options: '2'}
+    }
+);
